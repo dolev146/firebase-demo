@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Web Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAKi5TFGfbi8lJp11c2PVmprMeCSt2uAR0",
+            authDomain: "contactform-dacd5.firebaseapp.com",
+            databaseURL: "https://contactform-dacd5-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "contactform-dacd5",
+            storageBucket: "contactform-dacd5.appspot.com",
+            messagingSenderId: "397013712428",
+            appId: "1:397013712428:web:573f9fcb5e5c9b05835b89",
+            measurementId: "G-ZMNY08FYY1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand"> <span>Acme </span> Web Design </h1>
+        <div class="wrapper">
+            <div class="company-info">
+                <h3>Acme Web Design</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i> <a target="http://maps.google.com/?q=Modi'in Israel"
+                            href="http://maps.google.com/?q=Modi'in Israel">Modi'in Israel</a> </li>
+                    <li><i class="fa fa-phone"></i> <a href="tel:+972505884960">+972-50-588-4960</a></li>
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:dolev146@gmail.com">dolev146@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <form id="contactForm">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="company">Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label for="email">Email Address*</label>
+                        <input required type="text" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number*</label>
+                        <input required type="text" name="phone" id="phone">
+                    </p>
+                    <p class="full">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" id="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
